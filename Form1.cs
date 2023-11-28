@@ -120,7 +120,12 @@ namespace NG_sistema
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Inicio de sesión exitoso");
+                                    MessageBox.Show("Inicio de sesión exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                    menu_principal formMenuPrincipal = new menu_principal();
+                                    formMenuPrincipal.Show();
+
+                                    this.Hide();
                                 }
                                 intentosFallidos = 0;
                             }
